@@ -3,7 +3,7 @@
  *
  * [198] 打家劫舍
  */
-package cn
+package solution
 
 func max(x, y int) int {
 	if x > y {
