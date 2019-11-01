@@ -28,13 +28,15 @@ func longestValidParentheses(s string) int {
 
 	for i := size - 2; i > -1; i-- {
 		if s[i] == '(' {
-			if result[i+1]+i+1 < size && s[result[i+1]+i+1] == ')' {
-				result[i] = 2 + result[i+1]
-				if result[i+1]+i+1+1 < size {
-					result[i] = result[i] + result[result[i+1]+i+1+1]
-					if result[i] > max {
-						max = result[i]
-					}
+			sym := result[i+1] + i + 1 //可能匹配的 )的位置
+			if sym < size && s[sym] == ')' {
+				result[i] = 2 + result[i+1] //匹配了
+
+				if sym+1 < size { //是否有连续的
+					result[i] = result[i] + result[sym+1]
+				}
+				if result[i] > max {
+					max = result[i]
 				}
 			}
 		}
