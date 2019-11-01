@@ -18,29 +18,43 @@ type loc struct {
 // @lc code=start
 func longestValidParentheses(s string) int {
 	size := len(s)
-	result := make([][]loc, len(s), len(s))
-	for i := 0; i < size; i++ {
-		result[i] = make([]loc, size, size)
-	}
+	result := make([]int, len(s), len(s))
+	max := 0
 	for i := 0; i < size-1; i++ {
 		if s[i] == '(' && s[i+1] == ')' { //（）这种情况
-			result[i][i+1].start = i
-			result[i][i+1].len = 2
+			result[i] = 2
+			if result[i] > max {
+				max = result[i]
+			}
 		}
 	}
-	for i := 2; i < size; i=i+2 {
-		for j := 0; j < size-i; j++ {
-			if j-1 >= 0 {
-				if j+1 < size { //只求前后的最长的，其他的可以来拼接。
-					if s[j-1] == '(' && s[j+i+1] == ')' && result[j][j+i-1].len ==i {
-						result[j-1][j+1].start = 
+	flag := true
+	for flag {
+		flag = false
+		for j := 0; j < size; j++ {
+			if result[j] > 0 {
+				l := result[j]
+				if j-1 >= 0 && l+j < size {
+					if s[j-1] == '(' && s[l+j] == ')' && result[j-1] == 0 {
+						result[j-1] = 2 + result[j]
+						flag = true
+						if result[j-1] > max {
+							max = result[j-1]
+						}
 					}
 				}
-
+				if j+l < size && result[j+l] > 0 {
+					result[j] = result[j] + result[j+l]
+					flag = true
+					if result[j] > max {
+						max = result[j]
+					}
+				}
 			}
-
 		}
 	}
+
+	return max
 }
 
 // @lc code=end
