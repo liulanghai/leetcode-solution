@@ -3,7 +3,7 @@
  *
  * [78] 子集
  */
-package cn
+package solution
 
 import "fmt"
 

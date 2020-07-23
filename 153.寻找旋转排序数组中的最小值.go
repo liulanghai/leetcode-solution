@@ -3,7 +3,7 @@
  *
  * [153] 寻找旋转排序数组中的最小值
  */
-package cn
+package solution
 
 //采用二分查找，注意边界条件
 func findMin(nums []int) int {

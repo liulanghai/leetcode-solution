@@ -3,7 +3,7 @@
  *
  * [39] 组合总和
  */
-package cn
+package solution
 
 import "fmt"
 

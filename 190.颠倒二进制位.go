@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-package cn
+package solution
 
 func reverseBits(n uint32) uint32 {
 	n = (n >> 16) | (n << 16)

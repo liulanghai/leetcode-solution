@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-package cn
+package solution
 
 import (
 	"container/list"

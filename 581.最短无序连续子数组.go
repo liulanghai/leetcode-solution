@@ -3,7 +3,7 @@
  *
  * [581] 最短无序连续子数组
  */
-package cn
+package solution
 
 func findUnsortedSubarray(nums []int) int {
 	return 0

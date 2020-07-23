@@ -23,7 +23,7 @@
 
 
 */
-package cn
+package solution
 
 func longestPalindrome(s string) string {
 	size := len(s)

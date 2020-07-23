@@ -14,7 +14,7 @@ if result[i-1] == '(' && result[i]+ index 是否为 ')'  // (())的情况
 
 
 */
-package cn
+package solution
 
 // @lc code=start
 func longestValidParentheses(s string) int {

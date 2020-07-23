@@ -3,7 +3,7 @@
  *
  * [33] 搜索旋转排序数组
  */
-package cn
+package solution
 
 //搜索旋转数组
 func search(nums []int, target int) int {

@@ -11,7 +11,7 @@
  *     Right *TreeNode
  * }
  */
-package cn
+package solution
 
 //按层次遍历
 func largestValues(root *TreeNode) []int {

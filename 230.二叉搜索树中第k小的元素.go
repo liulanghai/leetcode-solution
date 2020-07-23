@@ -6,7 +6,7 @@
 
 // Definition for a binary tree node.
 
-package cn
+package solution
 
 type TreeNode struct {
 	Val   int

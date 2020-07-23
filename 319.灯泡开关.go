@@ -3,7 +3,7 @@
  *
  * [319] 灯泡开关
  */
-package cn
+package solution
 
 import "math"
 

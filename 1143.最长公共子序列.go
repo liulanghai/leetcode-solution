@@ -3,7 +3,7 @@
  *
  * [1143] 最长公共子序列
  */
-package cn
+package solution
 
 // @lc code=start
 //longestCommonSubsequence

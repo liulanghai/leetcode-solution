@@ -3,7 +3,7 @@
  *
  *
  */
-package cn
+package solution
 
 func majorityElement(nums []int) int {
 	var count int

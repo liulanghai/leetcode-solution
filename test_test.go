@@ -1,4 +1,4 @@
-package cn
+package solution
 
 import (
 	"fmt"

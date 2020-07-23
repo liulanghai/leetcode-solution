@@ -11,7 +11,7 @@
  *     Right *TreeNode
  * }
  */
-package cn
+package solution
 
 import "math"
 
