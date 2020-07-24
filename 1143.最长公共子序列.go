@@ -14,12 +14,6 @@ package solution
 
 // 分治会到来大量的重复计算,将递归转化为递推解决
 
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
 func longestCommonSubsequence(text1 string, text2 string) int {
 
 	if len(text1) == 0 || len(text2) == 0 {

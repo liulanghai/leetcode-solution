@@ -150,3 +150,11 @@ func TestLongestValidParentheses(t *testing.T) {
 		So(longestValidParentheses(")()())"), ShouldEqual, 4)
 	})
 }
+
+func TestUniquePath(t *testing.T) {
+	Convey("[62] 不同路径\n", t, func() {
+		So(uniquePaths(7, 3), ShouldEqual, 28)
+		So(uniquePaths(3, 2), ShouldEqual, 3)
+
+	})
+}
