@@ -158,3 +158,13 @@ func TestUniquePath(t *testing.T) {
 
 	})
 }
+func TestUniquePathsWithObstacles(t *testing.T) {
+	Convey("[63] 不同路径2\n", t, func() {
+		So(uniquePathsWithObstacles([][]int{
+			{0, 0, 0},
+			{0, 1, 0},
+			{0, 0, 0},
+		}), ShouldEqual, 2)
+
+	})
+}
