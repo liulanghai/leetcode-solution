@@ -168,3 +168,11 @@ func TestUniquePathsWithObstacles(t *testing.T) {
 
 	})
 }
+
+func Test300(t *testing.T) {
+	Convey("[300] \n", t, func() {
+		So(lengthOfLIS([]int{10, 9, 2, 5, 3, 7, 101, 18}), ShouldEqual, 4)
+		So(lengthOfLIS([]int{4, 10, 4, 3, 8, 9}), ShouldEqual, 4),
+		So(lengthOfLIS([]int{2,2}), ShouldEqual, 1)
+	})
+}
