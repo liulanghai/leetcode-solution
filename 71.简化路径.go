@@ -64,7 +64,7 @@
  */
 
 // @lc code=start
-//package solution
+package solution
 
 import "strings"
 
